@@ -39,9 +39,9 @@
     [super viewDidLoad];
     self.title = NSLocalizedString(@"kTitle", nil);
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction
+    self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction
                                                                                            target:self
-                                                                                           action:@selector(viewEventLog)];
+                                                                                           action:@selector(viewEventLog)] autorelease];
     
     self.view = [self createMainView];
     [self.view addSubview:[self counterLabel]];

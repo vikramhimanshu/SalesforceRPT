@@ -23,6 +23,8 @@
 		A36034AE1A9823F100DAEF3C /* Chart.html in Resources */ = {isa = PBXBuildFile; fileRef = A36034AC1A9823F100DAEF3C /* Chart.html */; };
 		A36034B11A982D4200DAEF3C /* ChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A36034B01A982D4200DAEF3C /* ChartViewController.m */; };
 		A36034B21A982D4200DAEF3C /* ChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A36034B01A982D4200DAEF3C /* ChartViewController.m */; };
+		A36034BA1A983B3A00DAEF3C /* charticon.png in Resources */ = {isa = PBXBuildFile; fileRef = A36034B91A983B3A00DAEF3C /* charticon.png */; };
+		A36034BB1A983B3A00DAEF3C /* charticon.png in Resources */ = {isa = PBXBuildFile; fileRef = A36034B91A983B3A00DAEF3C /* charticon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,7 @@
 		A36034AC1A9823F100DAEF3C /* Chart.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Chart.html; sourceTree = "<group>"; };
 		A36034AF1A982D4200DAEF3C /* ChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartViewController.h; sourceTree = "<group>"; };
 		A36034B01A982D4200DAEF3C /* ChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartViewController.m; sourceTree = "<group>"; };
+		A36034B91A983B3A00DAEF3C /* charticon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = charticon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +128,7 @@
 		A360346D1A97F90500DAEF3C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A36034B91A983B3A00DAEF3C /* charticon.png */,
 				A360346E1A97F90500DAEF3C /* Info.plist */,
 				A360346F1A97F90500DAEF3C /* main.m */,
 				A360349C1A97FE4200DAEF3C /* Localizable.strings */,
@@ -234,6 +238,7 @@
 			files = (
 				A36034811A97F90500DAEF3C /* LaunchScreen.xib in Resources */,
 				A360349A1A97FE4200DAEF3C /* Localizable.strings in Resources */,
+				A36034BA1A983B3A00DAEF3C /* charticon.png in Resources */,
 				A360347E1A97F90500DAEF3C /* Images.xcassets in Resources */,
 				A36034AD1A9823F100DAEF3C /* Chart.html in Resources */,
 			);
@@ -244,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A36034AE1A9823F100DAEF3C /* Chart.html in Resources */,
+				A36034BB1A983B3A00DAEF3C /* charticon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

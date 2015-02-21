@@ -33,10 +33,15 @@
     
     self.eventsLog = [self.tracking getAllEvents];
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction
-                                                                                           target:self
-                                                                                           action:@selector(showChartView)];
-    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setFrame:iconView.frame];
+    [button setBackgroundImage:[UIImage imageNamed:@"charticon"]
+                      forState:UIControlStateNormal];
+    [button addTarget:self
+               action:@selector(showChartView)
+     forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *chartButton = [[UIBarButtonItem alloc] initWithCustomView:button];
+    self.navigationItem.rightBarButtonItem = chartButton;
 }
 
 - (void)showChartView
