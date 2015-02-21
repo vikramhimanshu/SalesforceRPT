@@ -1,5 +1,5 @@
 //
-//  MasterViewController.h
+//  EventsLogTableViewController.h
 //  SalesforceRPT
 //
 //  Created by Himanshu on 2/20/15.
@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MasterViewController : UIViewController
+@interface EventsLogTableViewController : UITableViewController
 
 @end
-

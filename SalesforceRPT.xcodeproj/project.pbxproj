@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		A36034701A97F90500DAEF3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A360346F1A97F90500DAEF3C /* main.m */; };
 		A36034731A97F90500DAEF3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A36034721A97F90500DAEF3C /* AppDelegate.m */; };
-		A36034761A97F90500DAEF3C /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A36034751A97F90500DAEF3C /* MasterViewController.m */; };
-		A36034791A97F90500DAEF3C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A36034781A97F90500DAEF3C /* DetailViewController.m */; };
-		A360347C1A97F90500DAEF3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A360347A1A97F90500DAEF3C /* Main.storyboard */; };
+		A36034761A97F90500DAEF3C /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A36034751A97F90500DAEF3C /* MasterViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A360347E1A97F90500DAEF3C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A360347D1A97F90500DAEF3C /* Images.xcassets */; };
 		A36034811A97F90500DAEF3C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A360347F1A97F90500DAEF3C /* LaunchScreen.xib */; };
 		A360348D1A97F90500DAEF3C /* SalesforceRPTTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A360348C1A97F90500DAEF3C /* SalesforceRPTTests.m */; };
+		A360349A1A97FE4200DAEF3C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A360349C1A97FE4200DAEF3C /* Localizable.strings */; };
+		A36034A31A98071B00DAEF3C /* Counter.m in Sources */ = {isa = PBXBuildFile; fileRef = A36034A21A98071B00DAEF3C /* Counter.m */; };
+		A36034A61A980AF100DAEF3C /* EventsLogTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A36034A51A980AF100DAEF3C /* EventsLogTableViewController.m */; };
+		A36034A71A980AF100DAEF3C /* EventsLogTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A36034A51A980AF100DAEF3C /* EventsLogTableViewController.m */; };
+		A36034AA1A980CC700DAEF3C /* Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = A36034A91A980CC700DAEF3C /* Tracking.m */; };
+		A36034AB1A980CC700DAEF3C /* Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = A36034A91A980CC700DAEF3C /* Tracking.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,14 +39,22 @@
 		A36034721A97F90500DAEF3C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A36034741A97F90500DAEF3C /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		A36034751A97F90500DAEF3C /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		A36034771A97F90500DAEF3C /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		A36034781A97F90500DAEF3C /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		A360347B1A97F90500DAEF3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A360347D1A97F90500DAEF3C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A36034801A97F90500DAEF3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A36034861A97F90500DAEF3C /* SalesforceRPTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalesforceRPTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A360348B1A97F90500DAEF3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A360348C1A97F90500DAEF3C /* SalesforceRPTTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SalesforceRPTTests.m; sourceTree = "<group>"; };
+		A360349B1A97FE4200DAEF3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A360349D1A98014500DAEF3C /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A360349E1A98014500DAEF3C /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		A360349F1A98014F00DAEF3C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		A36034A01A98014F00DAEF3C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A36034A11A98071B00DAEF3C /* Counter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Counter.h; sourceTree = "<group>"; };
+		A36034A21A98071B00DAEF3C /* Counter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Counter.m; sourceTree = "<group>"; };
+		A36034A41A980AF100DAEF3C /* EventsLogTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsLogTableViewController.h; sourceTree = "<group>"; };
+		A36034A51A980AF100DAEF3C /* EventsLogTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsLogTableViewController.m; sourceTree = "<group>"; };
+		A36034A81A980CC700DAEF3C /* Tracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tracking.h; sourceTree = "<group>"; };
+		A36034A91A980CC700DAEF3C /* Tracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tracking.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,12 +100,15 @@
 				A36034721A97F90500DAEF3C /* AppDelegate.m */,
 				A36034741A97F90500DAEF3C /* MasterViewController.h */,
 				A36034751A97F90500DAEF3C /* MasterViewController.m */,
-				A36034771A97F90500DAEF3C /* DetailViewController.h */,
-				A36034781A97F90500DAEF3C /* DetailViewController.m */,
-				A360347A1A97F90500DAEF3C /* Main.storyboard */,
+				A36034A11A98071B00DAEF3C /* Counter.h */,
+				A36034A21A98071B00DAEF3C /* Counter.m */,
 				A360347D1A97F90500DAEF3C /* Images.xcassets */,
 				A360347F1A97F90500DAEF3C /* LaunchScreen.xib */,
 				A360346D1A97F90500DAEF3C /* Supporting Files */,
+				A36034A41A980AF100DAEF3C /* EventsLogTableViewController.h */,
+				A36034A51A980AF100DAEF3C /* EventsLogTableViewController.m */,
+				A36034A81A980CC700DAEF3C /* Tracking.h */,
+				A36034A91A980CC700DAEF3C /* Tracking.m */,
 			);
 			path = SalesforceRPT;
 			sourceTree = "<group>";
@@ -103,6 +118,7 @@
 			children = (
 				A360346E1A97F90500DAEF3C /* Info.plist */,
 				A360346F1A97F90500DAEF3C /* main.m */,
+				A360349C1A97FE4200DAEF3C /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -187,6 +203,8 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
+				es,
 			);
 			mainGroup = A36034611A97F90500DAEF3C;
 			productRefGroup = A360346B1A97F90500DAEF3C /* Products */;
@@ -204,8 +222,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A360347C1A97F90500DAEF3C /* Main.storyboard in Resources */,
 				A36034811A97F90500DAEF3C /* LaunchScreen.xib in Resources */,
+				A360349A1A97FE4200DAEF3C /* Localizable.strings in Resources */,
 				A360347E1A97F90500DAEF3C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,10 +242,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A36034AA1A980CC700DAEF3C /* Tracking.m in Sources */,
 				A36034731A97F90500DAEF3C /* AppDelegate.m in Sources */,
+				A36034A61A980AF100DAEF3C /* EventsLogTableViewController.m in Sources */,
 				A36034761A97F90500DAEF3C /* MasterViewController.m in Sources */,
 				A36034701A97F90500DAEF3C /* main.m in Sources */,
-				A36034791A97F90500DAEF3C /* DetailViewController.m in Sources */,
+				A36034A31A98071B00DAEF3C /* Counter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,7 +255,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A36034AB1A980CC700DAEF3C /* Tracking.m in Sources */,
 				A360348D1A97F90500DAEF3C /* SalesforceRPTTests.m in Sources */,
+				A36034A71A980AF100DAEF3C /* EventsLogTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,20 +272,24 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A360347A1A97F90500DAEF3C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A360347B1A97F90500DAEF3C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A360347F1A97F90500DAEF3C /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A36034801A97F90500DAEF3C /* Base */,
+				A360349E1A98014500DAEF3C /* fr */,
+				A360349F1A98014F00DAEF3C /* es */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		A360349C1A97FE4200DAEF3C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A360349B1A97FE4200DAEF3C /* en */,
+				A360349D1A98014500DAEF3C /* fr */,
+				A36034A01A98014F00DAEF3C /* es */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
