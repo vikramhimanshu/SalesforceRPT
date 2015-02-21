@@ -34,7 +34,7 @@
     self.eventsLog = [self.tracking getAllEvents];
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    [button setFrame:iconView.frame];
+    [button setFrame:CGRectMake(0, 0, 32, 32)];
     [button setBackgroundImage:[UIImage imageNamed:@"charticon"]
                       forState:UIControlStateNormal];
     [button addTarget:self
