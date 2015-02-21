@@ -10,11 +10,14 @@
 
 #import "EventsLogTableViewController.h"
 #import "Tracking.h"
+#import "ChartViewController.h"
 
 @interface EventsLogTableViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic) NSArray *eventsLog;
 @property (nonatomic)  Tracking *tracking;
+@property (nonatomic)  NSMutableString *chartDataString;
+@property (nonatomic)  ChartViewController *chartViewController;
 
 @end
 
@@ -29,7 +32,29 @@
            forCellReuseIdentifier:CELL_ID];
     
     self.eventsLog = [self.tracking getAllEvents];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction
+                                                                                           target:self
+                                                                                           action:@selector(showChartView)];
+    
 }
+
+- (void)showChartView
+{
+    NSString *htmlString = [self.chartViewController htmlStringWithChartData:self.chartDataString];
+    [self.chartViewController loadHTMLString:htmlString];
+
+    [self.navigationController pushViewController:self.chartViewController
+                                         animated:YES];
+}
+
+-(ChartViewController *)chartViewController {
+    if (_chartViewController == nil) {
+        _chartViewController = [[ChartViewController alloc] init];
+    }
+    return _chartViewController;
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -65,7 +90,15 @@
     NSDictionary *event = [self.eventsLog objectAtIndex:indexPath.row];
     NSDictionary *eventValue = [event valueForKey:[self eventNameForIndexPath:indexPath]];
     NSString *formatedValue = [NSString stringWithFormat:@"%@: %@",eventValue[@"value"],eventValue[@"timeStamp"]];
+    [self append:[eventValue[@"timeStamp"] debugDescription]
+           value:[eventValue[@"value"] integerValue]];
     return formatedValue;
+}
+
+- (void)append:(NSString *)timestamp value:(NSUInteger)value
+{
+    [self.chartDataString appendFormat:@","];
+    [self.chartDataString appendFormat:@"['%@', %lu]",timestamp,(unsigned long)value];
 }
 
 -(Tracking *)tracking
@@ -74,6 +107,14 @@
         _tracking = [Tracking sharedInstance];
     }
     return _tracking;
+}
+
+-(NSMutableString *)chartDataString
+{
+    if (_chartDataString == nil) {
+        _chartDataString = [NSMutableString stringWithString:@"['Time', 'Value']"];
+    }
+    return _chartDataString;
 }
 
 /*

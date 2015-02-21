@@ -19,6 +19,10 @@
 		A36034A71A980AF100DAEF3C /* EventsLogTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A36034A51A980AF100DAEF3C /* EventsLogTableViewController.m */; };
 		A36034AA1A980CC700DAEF3C /* Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = A36034A91A980CC700DAEF3C /* Tracking.m */; };
 		A36034AB1A980CC700DAEF3C /* Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = A36034A91A980CC700DAEF3C /* Tracking.m */; };
+		A36034AD1A9823F100DAEF3C /* Chart.html in Resources */ = {isa = PBXBuildFile; fileRef = A36034AC1A9823F100DAEF3C /* Chart.html */; };
+		A36034AE1A9823F100DAEF3C /* Chart.html in Resources */ = {isa = PBXBuildFile; fileRef = A36034AC1A9823F100DAEF3C /* Chart.html */; };
+		A36034B11A982D4200DAEF3C /* ChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A36034B01A982D4200DAEF3C /* ChartViewController.m */; };
+		A36034B21A982D4200DAEF3C /* ChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A36034B01A982D4200DAEF3C /* ChartViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,9 @@
 		A36034A51A980AF100DAEF3C /* EventsLogTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsLogTableViewController.m; sourceTree = "<group>"; };
 		A36034A81A980CC700DAEF3C /* Tracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tracking.h; sourceTree = "<group>"; };
 		A36034A91A980CC700DAEF3C /* Tracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tracking.m; sourceTree = "<group>"; };
+		A36034AC1A9823F100DAEF3C /* Chart.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Chart.html; sourceTree = "<group>"; };
+		A36034AF1A982D4200DAEF3C /* ChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartViewController.h; sourceTree = "<group>"; };
+		A36034B01A982D4200DAEF3C /* ChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +116,8 @@
 				A36034A51A980AF100DAEF3C /* EventsLogTableViewController.m */,
 				A36034A81A980CC700DAEF3C /* Tracking.h */,
 				A36034A91A980CC700DAEF3C /* Tracking.m */,
+				A36034AF1A982D4200DAEF3C /* ChartViewController.h */,
+				A36034B01A982D4200DAEF3C /* ChartViewController.m */,
 			);
 			path = SalesforceRPT;
 			sourceTree = "<group>";
@@ -119,6 +128,7 @@
 				A360346E1A97F90500DAEF3C /* Info.plist */,
 				A360346F1A97F90500DAEF3C /* main.m */,
 				A360349C1A97FE4200DAEF3C /* Localizable.strings */,
+				A36034AC1A9823F100DAEF3C /* Chart.html */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -225,6 +235,7 @@
 				A36034811A97F90500DAEF3C /* LaunchScreen.xib in Resources */,
 				A360349A1A97FE4200DAEF3C /* Localizable.strings in Resources */,
 				A360347E1A97F90500DAEF3C /* Images.xcassets in Resources */,
+				A36034AD1A9823F100DAEF3C /* Chart.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A36034AE1A9823F100DAEF3C /* Chart.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +257,7 @@
 				A36034AA1A980CC700DAEF3C /* Tracking.m in Sources */,
 				A36034731A97F90500DAEF3C /* AppDelegate.m in Sources */,
 				A36034A61A980AF100DAEF3C /* EventsLogTableViewController.m in Sources */,
+				A36034B11A982D4200DAEF3C /* ChartViewController.m in Sources */,
 				A36034761A97F90500DAEF3C /* MasterViewController.m in Sources */,
 				A36034701A97F90500DAEF3C /* main.m in Sources */,
 				A36034A31A98071B00DAEF3C /* Counter.m in Sources */,
@@ -256,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A36034AB1A980CC700DAEF3C /* Tracking.m in Sources */,
+				A36034B21A982D4200DAEF3C /* ChartViewController.m in Sources */,
 				A360348D1A97F90500DAEF3C /* SalesforceRPTTests.m in Sources */,
 				A36034A71A980AF100DAEF3C /* EventsLogTableViewController.m in Sources */,
 			);
